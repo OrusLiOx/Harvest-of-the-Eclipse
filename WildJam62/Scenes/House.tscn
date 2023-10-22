@@ -155,7 +155,7 @@ position = Vector2( 152.577, 206.59 )
 texture = ExtResource( 25 )
 
 [node name="Doug8" type="Sprite" parent="Dougs"]
-position = Vector2( 284.425, 35.3079 )
+position = Vector2( 256, 82.3 )
 texture = ExtResource( 25 )
 
 [node name="Doug9" type="Sprite" parent="Dougs"]
@@ -167,7 +167,7 @@ position = Vector2( 539.107, 38.2848 )
 texture = ExtResource( 25 )
 
 [node name="Doug11" type="Sprite" parent="Dougs"]
-position = Vector2( 1196.76, 249.498 )
+position = Vector2( 1188.12, 249.498 )
 texture = ExtResource( 25 )
 
 [node name="Doug12" type="Sprite" parent="Dougs"]
@@ -212,12 +212,6 @@ visible = false
 position = Vector2( -108.695, 359.72 )
 texture = ExtResource( 19 )
 
-[node name="Bgm" type="AudioStreamPlayer2D" parent="."]
-position = Vector2( 204.219, 71.1167 )
-stream = ExtResource( 23 )
-volume_db = -10.0
-attenuation = 2.21914e-05
-
 [node name="MarriSong" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( -108.096, 352.202 )
 stream = ExtResource( 20 )
@@ -225,6 +219,12 @@ volume_db = -10.0
 
 [node name="PlayerV2" parent="." instance=ExtResource( 2 )]
 position = Vector2( -368, 224 )
+
+[node name="Bgm" type="AudioStreamPlayer2D" parent="PlayerV2"]
+position = Vector2( 572.219, -152.883 )
+stream = ExtResource( 23 )
+volume_db = -10.0
+attenuation = 2.21914e-05
 
 [node name="SelectionScene" parent="." instance=ExtResource( 13 )]
 visible = false

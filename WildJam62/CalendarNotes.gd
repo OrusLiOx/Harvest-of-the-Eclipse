@@ -20,7 +20,7 @@ var notes = {
 	},
 	"Tuesday" : {
 		"Mom" : "Mom will be having wine in the bathroom tonight.",
-		"Dad" : null,
+		"Dad" : "Steve won't be home tonight",
 		"Steve" : null,
 		"Emily" : "Emily is staying in her own room tonight.",
 		"Marri" : "Marri won’t be home tonight."
@@ -34,7 +34,7 @@ var notes = {
 	},
 	"Thursday" : {
 		"Mom" : "Marri will be up late practicing piano.",
-		"Dad" : null,
+		"Dad" : "Steve won't be home tonight",
 		"Steve" : null,
 		"Emily" : "Emily went to sleep in her own room.",
 		"Marri" : null
@@ -105,5 +105,5 @@ func UpdateCalendar():
 		for person in notes[day].keys():
 			if known_notes[day][person] == true:
 				if notes[day][person] != null:
-					day_text += "\n- " + notes[day][person]
+					day_text += "\n+ " + notes[day][person]
 		$DayNotes.get_node(day+"Text").text = day_text

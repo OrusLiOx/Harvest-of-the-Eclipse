@@ -84,8 +84,9 @@ func _ready():
 	$SelectionScene.hide()
 	$Ending.hide()
 	$Title.show()
+	$PlayerV2/Bgm.playing = true
 	$PlayerV2.interacting = true
-	$Bgm.playing = true
+	
 	
 func startDay():
 	
@@ -100,11 +101,11 @@ func startDay():
 	
 	if $MarriSong.playing == true:
 		$MarriSong.playing = false
-		$Bgm.playing = true
+		$PlayerV2/Bgm.playing = true
 	
 	if day == 4:
 		$MarriPiano.show()
-		$Bgm.playing = false
+		$PlayerV2/Bgm.playing = false
 		$MarriSong.playing = true
 	else:
 		$MarriPiano.hide()
@@ -136,7 +137,7 @@ func _on_SelectionScene_EndDay(person):
 	startDay()
 
 func endCutscene():
-	$Bgm.pitch_scale = .2
+	$PlayerV2/Bgm.pitch_scale = .2
 	$Ending.EndGame(souls)
 	$Ending.show()
 	$DayTransition.hide()
