@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mike_Post_-_Law_&_Order_Special_Victims_Unit_Sound.ogg-bd0a611e283a30385065806b0a9ea9f5.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Mike_Post_-_Law_&_Order_Special_Victims_Unit_Sound.ogg"
+dest_files=[ "res://.import/Mike_Post_-_Law_&_Order_Special_Victims_Unit_Sound.ogg-bd0a611e283a30385065806b0a9ea9f5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

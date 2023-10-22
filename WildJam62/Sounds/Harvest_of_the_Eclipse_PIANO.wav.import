@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Harvest_of_the_Eclipse_PIANO.wav-7839bc8d2d1e478bd5af05da7e8095ef.sample"
+
+[deps]
+
+source_file="res://Sounds/Harvest_of_the_Eclipse_PIANO.wav"
+dest_files=[ "res://.import/Harvest_of_the_Eclipse_PIANO.wav-7839bc8d2d1e478bd5af05da7e8095ef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

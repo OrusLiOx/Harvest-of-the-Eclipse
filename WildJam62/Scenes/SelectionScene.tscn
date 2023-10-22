@@ -1,0 +1,189 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Themes/SpookyTheme.tres" type="Theme" id=1]
+[ext_resource path="res://Themes/CalendarDays.tres" type="Theme" id=2]
+[ext_resource path="res://HousePanelControl.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/HouseButtons.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Calendar.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HousePanelGroup.tres" type="ButtonGroup" id=6]
+[ext_resource path="res://SelectionScene.gd" type="Script" id=7]
+[ext_resource path="res://Art/Floor2.png" type="Texture" id=8]
+[ext_resource path="res://Sounds/Mark.wav" type="AudioStream" id=9]
+[ext_resource path="res://Art/Floor1.png" type="Texture" id=10]
+[ext_resource path="res://Art/Basement.png" type="Texture" id=11]
+[ext_resource path="res://Sounds/MarkFailed.wav" type="AudioStream" id=12]
+
+[node name="SelectionScene" type="CanvasLayer"]
+script = ExtResource( 7 )
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.709804, 0.709804, 0.709804, 1 )
+
+[node name="SelectionController" type="Control" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+group = ExtResource( 6 )
+
+[node name="HouseZone" type="ColorRect" parent="Background/SelectionController"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 64.0
+margin_top = 64.0
+margin_right = -64.0
+margin_bottom = -88.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Master Bedroom" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_right = -616.0
+
+[node name="Master Bath" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 32.0
+margin_right = -768.0
+
+[node name="Steve Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 664.0
+margin_right = -64.0
+
+[node name="Marri Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 336.0
+margin_right = -456.0
+
+[node name="Emily Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 504.0
+margin_right = -280.0
+
+[node name="Porch" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 32.0
+margin_top = 160.0
+margin_right = -736.0
+margin_bottom = -176.0
+
+[node name="Living Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 160.0
+margin_top = 160.0
+margin_right = -448.0
+margin_bottom = -176.0
+
+[node name="Dining Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 448.0
+margin_top = 160.0
+margin_right = -280.0
+margin_bottom = -176.0
+
+[node name="Kitchen" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 616.0
+margin_top = 160.0
+margin_right = -64.0
+margin_bottom = -176.0
+
+[node name="Music Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 128.0
+margin_top = 288.0
+margin_right = -544.0
+margin_bottom = -48.0
+
+[node name="Game Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 360.0
+margin_top = 288.0
+margin_right = -280.0
+margin_bottom = -48.0
+
+[node name="Wine Cellar" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+margin_left = 624.0
+margin_top = 288.0
+margin_right = -104.0
+margin_bottom = -48.0
+
+[node name="TopFloor" type="Sprite" parent="Background/SelectionController/HouseZone"]
+position = Vector2( 432, 96 )
+scale = Vector2( 0.486293, 1 )
+texture = ExtResource( 8 )
+
+[node name="MiddleFloor" type="Sprite" parent="Background/SelectionController/HouseZone"]
+position = Vector2( 431.5, 216 )
+scale = Vector2( 0.485697, 1 )
+texture = ExtResource( 10 )
+
+[node name="Basement" type="Sprite" parent="Background/SelectionController/HouseZone"]
+position = Vector2( 459.5, 344 )
+scale = Vector2( 0.488489, 1 )
+texture = ExtResource( 11 )
+
+[node name="CollectSoul" type="Button" parent="Background/SelectionController"]
+anchor_left = 0.531
+anchor_top = 0.853
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 224.256
+margin_top = 24.2
+margin_right = -68.0
+margin_bottom = -24.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.945098, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_hover = Color( 0.945098, 0.0745098, 0.0745098, 1 )
+disabled = true
+text = "Mark Soul"
+
+[node name="CalendarButton" type="Button" parent="Background/SelectionController"]
+anchor_top = 0.853
+anchor_right = 0.531
+anchor_bottom = 1.0
+margin_left = 64.0
+margin_top = 16.2
+margin_right = -287.744
+margin_bottom = -28.0
+theme = ExtResource( 1 )
+toggle_mode = true
+text = "Family Calendar"
+
+[node name="Calendar" parent="Background/SelectionController" instance=ExtResource( 5 )]
+visible = false
+
+[node name="RoomSelectedLabel" type="Label" parent="Background/SelectionController"]
+anchor_top = 0.853
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 384.0
+margin_top = 24.2
+margin_right = -384.0
+margin_bottom = -24.0
+rect_pivot_offset = Vector2( -216, -32 )
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PICK A ROOM"
+align = 1
+valign = 1
+
+[node name="DayLabel" type="Label" parent="Background/SelectionController"]
+anchor_right = 1.0
+anchor_bottom = 0.107
+margin_left = 384.0
+margin_top = 16.0
+margin_right = -384.0
+margin_bottom = -8.2
+rect_pivot_offset = Vector2( -216, -32 )
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MONDAY NIGHT"
+align = 1
+valign = 1
+
+[node name="FailedMark" type="AudioStreamPlayer2D" parent="Background/SelectionController"]
+stream = ExtResource( 12 )
+volume_db = -10.0
+
+[node name="Marked" type="AudioStreamPlayer2D" parent="Background/SelectionController"]
+stream = ExtResource( 9 )
+volume_db = -10.0
+
+[node name="WaitTime" type="Timer" parent="Background/SelectionController"]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="CollectSoul" from="Background/SelectionController" to="." method="_on_SelectionController_CollectSoul"]
+[connection signal="pressed" from="Background/SelectionController/CollectSoul" to="Background/SelectionController" method="_on_CollectSoul_pressed"]
+[connection signal="toggled" from="Background/SelectionController/CalendarButton" to="Background/SelectionController" method="_on_Calendar_toggled"]
+[connection signal="timeout" from="Background/SelectionController/WaitTime" to="Background/SelectionController" method="_on_WaitTime_timeout"]

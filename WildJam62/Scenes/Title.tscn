@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Title.gd" type="Script" id=1]
+[ext_resource path="res://Art/Title.png" type="Texture" id=2]
+[ext_resource path="res://Themes/CorrectionBrush-ywW7Y.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Art/icon.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 66
+outline_size = 1
+outline_color = Color( 0.054902, 0.101961, 0.192157, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Title" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Start" type="Button" parent="."]
+margin_left = 385.0
+margin_top = 283.0
+margin_right = 639.0
+margin_bottom = 600.0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 512.155, 298.894 )
+scale = Vector2( 2.55712, 2.66681 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.262
+margin_left = 260.903
+margin_top = 7.84246
+margin_right = -156.097
+margin_bottom = 5.64246
+custom_colors/font_color = Color( 0.94902, 0.380392, 0.294118, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "HARVEST OF THE
+ECLIPSE"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Icon" type="Sprite" parent="."]
+position = Vector2( 979.37, 556.194 )
+scale = Vector2( 1.34414, 1.34414 )
+texture = ExtResource( 4 )
+
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
