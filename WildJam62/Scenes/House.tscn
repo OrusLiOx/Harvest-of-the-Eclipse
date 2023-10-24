@@ -215,16 +215,13 @@ texture = ExtResource( 19 )
 [node name="MarriSong" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( -108.096, 352.202 )
 stream = ExtResource( 20 )
-volume_db = -10.0
 
 [node name="PlayerV2" parent="." instance=ExtResource( 2 )]
-position = Vector2( -368, 224 )
+position = Vector2( -368, 225 )
 
-[node name="Bgm" type="AudioStreamPlayer2D" parent="PlayerV2"]
-position = Vector2( 572.219, -152.883 )
+[node name="Bgm" type="AudioStreamPlayer" parent="PlayerV2"]
 stream = ExtResource( 23 )
 volume_db = -10.0
-attenuation = 2.21914e-05
 
 [node name="SelectionScene" parent="." instance=ExtResource( 13 )]
 visible = false
