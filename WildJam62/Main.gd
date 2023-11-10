@@ -37,7 +37,7 @@ var Positions = {
 		"Steve" : Vector2(0,floors["Gone"]),
 		"Emily" : Vector2(64,floors["Middle"]),
 		"Marri" : Vector2(208,floors["Top"]),
-		"EndDay" : Vector2(800,floors["Bottom"]),
+		"EndDay" : Vector2(-440,floors["Top"]),
 		"Doug" : Vector2(0,floors["Gone"])
 	},
 	"Wednesday" : {

@@ -47,7 +47,6 @@ func _ready():
 	confirm = $CollectSoul
 	confirm.set_deferred("disabled", true)
 	for button in group.get_buttons():
-		button.get_node("Label").text = button.name
 		button.connect("pressed", self, "button_pressed")
 	reset(0)
 		
@@ -74,7 +73,14 @@ func button_pressed():
 	if !confirmedOn:
 		confirm.disabled = false
 		confirmedOn = true
-	selectedRoom = group.get_pressed_button().name
+	var pressed_butt = group.get_pressed_button()
+	selectedRoom = pressed_butt.name
+	
+	for button in group.get_buttons():
+		if button != pressed_butt:
+			button.set_modulate(Color(0,0,0,0))
+		else:
+			button.set_modulate(Color(1,0,0,.5))
 	$RoomSelectedLabel.text = selectedRoom
 
 func _on_CollectSoul_pressed():

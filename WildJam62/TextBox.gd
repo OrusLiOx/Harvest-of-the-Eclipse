@@ -20,7 +20,7 @@ var dialogue = {
 		"Doug" : "Nice form new reaper, I will be observing you on your first assignment. You have until the eclipse to mark all of your targets. Remember only one target per night and they MUST be alone."
 	},
 	"Tuesday" : {
-		"Mom" : "Can you bring some wine to the bathroom for me tonight? (go to the wine cellar to end the day)",
+		"Mom" : "Can you set up the bath for me tonight? (go to the master bathroom to end the day)",
 		"Dad" : "I was hoping to see Steve before his game tomorrow afternoon but he's staying with his friends tonight.",
 		"Steve" : "",
 		"Emily" : "I can’t believe Marri is abandoning me. I might as well stay in my own room then.",

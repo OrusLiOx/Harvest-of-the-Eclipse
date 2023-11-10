@@ -202,7 +202,7 @@ spriteFrames = ExtResource( 10 )
 spriteOffset = 25
 
 [node name="EndDay" parent="NPCs" instance=ExtResource( 18 )]
-position = Vector2( -288, 256 )
+position = Vector2( -440, 112 )
 
 [node name="Doug" parent="NPCs" instance=ExtResource( 22 )]
 position = Vector2( -320, 256 )
