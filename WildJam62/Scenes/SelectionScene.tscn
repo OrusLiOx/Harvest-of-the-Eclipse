@@ -36,67 +36,6 @@ margin_right = -64.0
 margin_bottom = -88.0
 color = Color( 0, 0, 0, 1 )
 
-[node name="Master Bedroom" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_right = -616.0
-
-[node name="Master Bath" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 32.0
-margin_right = -768.0
-
-[node name="Steve Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 664.0
-margin_right = -64.0
-
-[node name="Marri Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 336.0
-margin_right = -456.0
-
-[node name="Emily Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 504.0
-margin_right = -280.0
-
-[node name="Porch" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 32.0
-margin_top = 160.0
-margin_right = -736.0
-margin_bottom = -176.0
-
-[node name="Living Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 160.0
-margin_top = 160.0
-margin_right = -448.0
-margin_bottom = -176.0
-
-[node name="Dining Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 448.0
-margin_top = 160.0
-margin_right = -280.0
-margin_bottom = -176.0
-
-[node name="Kitchen" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 616.0
-margin_top = 160.0
-margin_right = -64.0
-margin_bottom = -176.0
-
-[node name="Music Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 128.0
-margin_top = 288.0
-margin_right = -544.0
-margin_bottom = -48.0
-
-[node name="Game Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 360.0
-margin_top = 288.0
-margin_right = -280.0
-margin_bottom = -48.0
-
-[node name="Wine Cellar" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
-margin_left = 624.0
-margin_top = 288.0
-margin_right = -104.0
-margin_bottom = -48.0
-
 [node name="TopFloor" type="Sprite" parent="Background/SelectionController/HouseZone"]
 position = Vector2( 432, 96 )
 scale = Vector2( 0.486293, 1 )
@@ -111,6 +50,86 @@ texture = ExtResource( 10 )
 position = Vector2( 459.5, 344 )
 scale = Vector2( 0.488489, 1 )
 texture = ExtResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="Background/SelectionController/HouseZone"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.345098 )
+
+[node name="Master Bedroom" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 133.0
+margin_right = -611.0
+
+[node name="Master Bath" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 28.0
+margin_right = -763.0
+
+[node name="Steve Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 664.0
+margin_right = -126.0
+
+[node name="Marri Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 334.0
+margin_right = -455.0
+
+[node name="Emily Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+light_mask = 0
+margin_left = 508.0
+margin_right = -282.0
+
+[node name="Porch" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 26.0
+margin_top = 160.0
+margin_right = -736.0
+margin_bottom = -176.0
+
+[node name="Living Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 209.0
+margin_top = 160.0
+margin_right = -496.0
+margin_bottom = -176.0
+
+[node name="Dining Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 448.0
+margin_top = 160.0
+margin_right = -282.0
+margin_bottom = -176.0
+
+[node name="Kitchen" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 663.0
+margin_top = 160.0
+margin_right = -57.0
+margin_bottom = -176.0
+
+[node name="Music Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 190.0
+margin_top = 288.0
+margin_right = -539.0
+margin_bottom = -48.0
+
+[node name="Game Room" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 357.0
+margin_top = 288.0
+margin_right = -276.0
+margin_bottom = -48.0
+
+[node name="Wine Cellar" parent="Background/SelectionController/HouseZone" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 624.0
+margin_top = 288.0
+margin_right = -97.0
+margin_bottom = -48.0
 
 [node name="CollectSoul" type="Button" parent="Background/SelectionController"]
 anchor_left = 0.531
@@ -171,17 +190,17 @@ text = "MONDAY NIGHT"
 align = 1
 valign = 1
 
-[node name="FailedMark" type="AudioStreamPlayer2D" parent="Background/SelectionController"]
-stream = ExtResource( 12 )
-volume_db = -10.0
-
-[node name="Marked" type="AudioStreamPlayer2D" parent="Background/SelectionController"]
-stream = ExtResource( 9 )
-volume_db = -10.0
-
 [node name="WaitTime" type="Timer" parent="Background/SelectionController"]
 wait_time = 3.0
 one_shot = true
+
+[node name="FailedMark" type="AudioStreamPlayer" parent="Background/SelectionController"]
+stream = ExtResource( 12 )
+volume_db = -10.0
+
+[node name="Marked" type="AudioStreamPlayer" parent="Background/SelectionController"]
+stream = ExtResource( 9 )
+volume_db = -10.0
 
 [connection signal="CollectSoul" from="Background/SelectionController" to="." method="_on_SelectionController_CollectSoul"]
 [connection signal="pressed" from="Background/SelectionController/CollectSoul" to="Background/SelectionController" method="_on_CollectSoul_pressed"]

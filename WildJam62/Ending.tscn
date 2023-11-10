@@ -101,7 +101,7 @@ rect_pivot_offset = Vector2( 96, 28 )
 theme = ExtResource( 3 )
 text = "Another Path?"
 
-[node name="Slash" type="AudioStreamPlayer2D" parent="."]
+[node name="Slash" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 
 [connection signal="pressed" from="Left" to="." method="_on_Left_pressed"]
