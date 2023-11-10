@@ -68,6 +68,7 @@ func reset(var today : int):
 	
 	for button in group.get_buttons():
 		button.set_deferred("disabled", false)
+		button.set_modulate(Color(0,0,0,0))
 
 func button_pressed():
 	if !confirmedOn:
